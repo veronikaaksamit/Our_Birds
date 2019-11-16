@@ -1,0 +1,42 @@
+﻿@model Our_Birds.Models.IndexViewModel
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div style="background-image: url(../../Pictures/pjimage.jpg); background-position:center; background-size:contain; background-repeat: no-repeat; width: 100%;" class="col-md-11">
+    <h1>@Model.PageTitle</h1>
+    <p class="lead">@Model.MainArticle</p>
+    <p style="padding-top:220px;display: flex; justify-content: flex-end; ">
+        <a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a>
+    </p>
+</div>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>@Model.FirstArticleTitle</h2>
+        <p>
+            <img src="@Url.Content(" ../../Pictures/pinka.jpg")" alt="IMAGES" width="40%" height="40%" />
+            <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>@Model.SecondArticleTitle</h2>
+        <p>
+            <img src="@Url.Content(" ../../Pictures/Ara modrozlta.jpg")" alt="IMAGES" width="60%" height="60%" />
+            <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>@Model.ThirdArticleTitle</h2>
+        <p>
+            <div style="background-image: url(../../Pictures/puffin.jpg); background-position:center; background-size:contain; background-repeat: no-repeat; width: 100%;">
+
+            </div>
+            <img src="@Url.Content(" ../../Pictures/puffin.jpg")" alt="IMAGES" width="80%" height="80%" />
+            <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a>
+        </p>
+    </div>
+</div>
